@@ -169,6 +169,9 @@
                                 <state key="normal" title="$ Random #">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="randomBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2pa-DP-Sl9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -182,6 +185,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Riq-Sq-oCO"/>
+                    <connections>
+                        <outlet property="birthYearLbl" destination="FaX-Zh-1vM" id="0na-fE-biR"/>
+                        <outlet property="genderLbl" destination="etj-gO-N1x" id="tYw-iv-UK1"/>
+                        <outlet property="hairColorLbl" destination="kky-JI-Qgc" id="1mf-pg-fjm"/>
+                        <outlet property="heightLbl" destination="C0a-vN-O1N" id="DHI-md-6OR"/>
+                        <outlet property="massLb" destination="go5-lP-qYK" id="maW-Jq-JMO"/>
+                        <outlet property="nameLbl" destination="zWW-XV-e04" id="yJv-vW-VtM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

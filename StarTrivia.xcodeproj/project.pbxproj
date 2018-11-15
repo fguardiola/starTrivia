@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D081811794B0DCC94A0C301 /* Pods_StarTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77472920F8EA9E6E39448F0E /* Pods_StarTrivia.framework */; };
 		53CD9409219C226300084CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9408219C226300084CAB /* AppDelegate.swift */; };
 		53CD940B219C226300084CAB /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD940A219C226300084CAB /* SelectPersonVC.swift */; };
 		53CD940E219C226300084CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53CD940C219C226300084CAB /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 		53CD9425219C3B3800084CAB /* BlackBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9424219C3B3800084CAB /* BlackBgView.swift */; };
 		53CD9429219C43C600084CAB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9428219C43C600084CAB /* Constants.swift */; };
 		53CD942B219C44DB00084CAB /* PersonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD942A219C44DB00084CAB /* PersonApi.swift */; };
+		53CD942E219C4FC000084CAB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD942D219C4FC000084CAB /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,10 @@
 		53CD9424219C3B3800084CAB /* BlackBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBgView.swift; sourceTree = "<group>"; };
 		53CD9428219C43C600084CAB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		53CD942A219C44DB00084CAB /* PersonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApi.swift; sourceTree = "<group>"; };
+		53CD942D219C4FC000084CAB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		77472920F8EA9E6E39448F0E /* Pods_StarTrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarTrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C034D96183BCD71029B14D /* Pods-StarTrivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarTrivia/Pods-StarTrivia.release.xcconfig"; sourceTree = "<group>"; };
+		D38DCB0E4DED6885EE9CA1AD /* Pods-StarTrivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarTrivia/Pods-StarTrivia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D081811794B0DCC94A0C301 /* Pods_StarTrivia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46CDD4D4A96C8C316E0F8F47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D38DCB0E4DED6885EE9CA1AD /* Pods-StarTrivia.debug.xcconfig */,
+				D2C034D96183BCD71029B14D /* Pods-StarTrivia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		53CD93FC219C226200084CAB = {
 			isa = PBXGroup;
 			children = (
 				53CD9407219C226300084CAB /* StarTrivia */,
 				53CD9406219C226300084CAB /* Products */,
+				46CDD4D4A96C8C316E0F8F47 /* Pods */,
+				8CB2F5BD7FA6D806359135AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +84,7 @@
 		53CD9407219C226300084CAB /* StarTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				53CD942C219C4FA700084CAB /* Model */,
 				53CD9427219C43AB00084CAB /* Utils */,
 				53CD9426219C438A00084CAB /* Services */,
 				53CD9422219C25A600084CAB /* Resources */,
@@ -130,6 +149,22 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		53CD942C219C4FA700084CAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53CD942D219C4FC000084CAB /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CB2F5BD7FA6D806359135AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77472920F8EA9E6E39448F0E /* Pods_StarTrivia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53CD9417219C226600084CAB /* Build configuration list for PBXNativeTarget "StarTrivia" */;
 			buildPhases = (
+				20CD822330C9B58FA40BDB99 /* [CP] Check Pods Manifest.lock */,
 				53CD9401219C226300084CAB /* Sources */,
 				53CD9402219C226300084CAB /* Frameworks */,
 				53CD9403219C226300084CAB /* Resources */,
+				DBAB7CD05F2749B5D4E59C9D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,11 +236,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20CD822330C9B58FA40BDB99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarTrivia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBAB7CD05F2749B5D4E59C9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StarTrivia/Pods-StarTrivia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StarTrivia/Pods-StarTrivia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		53CD9401219C226300084CAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53CD942E219C4FC000084CAB /* Person.swift in Sources */,
 				53CD940B219C226300084CAB /* SelectPersonVC.swift in Sources */,
 				53CD9409219C226300084CAB /* AppDelegate.swift in Sources */,
 				53CD9425219C3B3800084CAB /* BlackBgView.swift in Sources */,
@@ -352,6 +439,7 @@
 		};
 		53CD9418219C226600084CAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D38DCB0E4DED6885EE9CA1AD /* Pods-StarTrivia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -370,6 +458,7 @@
 		};
 		53CD9419219C226600084CAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C034D96183BCD71029B14D /* Pods-StarTrivia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
