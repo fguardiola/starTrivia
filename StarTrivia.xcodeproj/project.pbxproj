@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2D081811794B0DCC94A0C301 /* Pods_StarTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77472920F8EA9E6E39448F0E /* Pods_StarTrivia.framework */; };
+		53C1E15B219EE94E004DD62E /* FadeEnableBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1E15A219EE94E004DD62E /* FadeEnableBtn.swift */; };
+		53C1E15D219EEF50004DD62E /* HomeWorldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1E15C219EEF50004DD62E /* HomeWorldVC.swift */; };
+		53C1E15F219EEF65004DD62E /* VehiclesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1E15E219EEF65004DD62E /* VehiclesVC.swift */; };
+		53C1E161219EEF7D004DD62E /* StarshipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1E160219EEF7D004DD62E /* StarshipsVC.swift */; };
+		53C1E163219EEF94004DD62E /* FilmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1E162219EEF94004DD62E /* FilmsVC.swift */; };
+		53C1E16521A2AC23004DD62E /* HomeWorldApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1E16421A2AC23004DD62E /* HomeWorldApi.swift */; };
+		53C1E16721A2AC4C004DD62E /* HomeWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1E16621A2AC4C004DD62E /* HomeWorld.swift */; };
+		53C1E16921A2BE40004DD62E /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1E16821A2BE40004DD62E /* Vehicle.swift */; };
+		53C1E16B21A2C657004DD62E /* VehiclesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1E16A21A2C657004DD62E /* VehiclesApi.swift */; };
+		53C1E16D21A2FE4B004DD62E /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1E16C21A2FE4B004DD62E /* Starship.swift */; };
+		53C1E16F21A3030A004DD62E /* StarshipApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1E16E21A3030A004DD62E /* StarshipApi.swift */; };
 		53CD9409219C226300084CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9408219C226300084CAB /* AppDelegate.swift */; };
 		53CD940B219C226300084CAB /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD940A219C226300084CAB /* SelectPersonVC.swift */; };
 		53CD940E219C226300084CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53CD940C219C226300084CAB /* Main.storyboard */; };
@@ -23,6 +34,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53C1E15A219EE94E004DD62E /* FadeEnableBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeEnableBtn.swift; sourceTree = "<group>"; };
+		53C1E15C219EEF50004DD62E /* HomeWorldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorldVC.swift; sourceTree = "<group>"; };
+		53C1E15E219EEF65004DD62E /* VehiclesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesVC.swift; sourceTree = "<group>"; };
+		53C1E160219EEF7D004DD62E /* StarshipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsVC.swift; sourceTree = "<group>"; };
+		53C1E162219EEF94004DD62E /* FilmsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsVC.swift; sourceTree = "<group>"; };
+		53C1E16421A2AC23004DD62E /* HomeWorldApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorldApi.swift; sourceTree = "<group>"; };
+		53C1E16621A2AC4C004DD62E /* HomeWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorld.swift; sourceTree = "<group>"; };
+		53C1E16821A2BE40004DD62E /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		53C1E16A21A2C657004DD62E /* VehiclesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesApi.swift; sourceTree = "<group>"; };
+		53C1E16C21A2FE4B004DD62E /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		53C1E16E21A3030A004DD62E /* StarshipApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipApi.swift; sourceTree = "<group>"; };
 		53CD9405219C226300084CAB /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CD9408219C226300084CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53CD940A219C226300084CAB /* SelectPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonVC.swift; sourceTree = "<group>"; };
@@ -103,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				53CD9424219C3B3800084CAB /* BlackBgView.swift */,
+				53C1E15A219EE94E004DD62E /* FadeEnableBtn.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,6 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				53CD940A219C226300084CAB /* SelectPersonVC.swift */,
+				53C1E15C219EEF50004DD62E /* HomeWorldVC.swift */,
+				53C1E15E219EEF65004DD62E /* VehiclesVC.swift */,
+				53C1E160219EEF7D004DD62E /* StarshipsVC.swift */,
+				53C1E162219EEF94004DD62E /* FilmsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -136,7 +163,10 @@
 		53CD9426219C438A00084CAB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				53C1E16421A2AC23004DD62E /* HomeWorldApi.swift */,
 				53CD942A219C44DB00084CAB /* PersonApi.swift */,
+				53C1E16A21A2C657004DD62E /* VehiclesApi.swift */,
+				53C1E16E21A3030A004DD62E /* StarshipApi.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -153,6 +183,9 @@
 			isa = PBXGroup;
 			children = (
 				53CD942D219C4FC000084CAB /* Person.swift */,
+				53C1E16621A2AC4C004DD62E /* HomeWorld.swift */,
+				53C1E16821A2BE40004DD62E /* Vehicle.swift */,
+				53C1E16C21A2FE4B004DD62E /* Starship.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,10 +324,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				53CD942E219C4FC000084CAB /* Person.swift in Sources */,
+				53C1E15B219EE94E004DD62E /* FadeEnableBtn.swift in Sources */,
+				53C1E161219EEF7D004DD62E /* StarshipsVC.swift in Sources */,
+				53C1E15F219EEF65004DD62E /* VehiclesVC.swift in Sources */,
+				53C1E16921A2BE40004DD62E /* Vehicle.swift in Sources */,
 				53CD940B219C226300084CAB /* SelectPersonVC.swift in Sources */,
 				53CD9409219C226300084CAB /* AppDelegate.swift in Sources */,
+				53C1E16F21A3030A004DD62E /* StarshipApi.swift in Sources */,
+				53C1E16D21A2FE4B004DD62E /* Starship.swift in Sources */,
 				53CD9425219C3B3800084CAB /* BlackBgView.swift in Sources */,
+				53C1E16B21A2C657004DD62E /* VehiclesApi.swift in Sources */,
 				53CD942B219C44DB00084CAB /* PersonApi.swift in Sources */,
+				53C1E16521A2AC23004DD62E /* HomeWorldApi.swift in Sources */,
+				53C1E16721A2AC4C004DD62E /* HomeWorld.swift in Sources */,
+				53C1E163219EEF94004DD62E /* FilmsVC.swift in Sources */,
+				53C1E15D219EEF50004DD62E /* HomeWorldVC.swift in Sources */,
 				53CD9429219C43C600084CAB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

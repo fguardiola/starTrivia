@@ -18,6 +18,7 @@ class PersonApi {
         
         let random  = Int.random(in: 1...87)
         let path =  GET_PERSON_URL + "\(random)"
+//        let path =  GET_LUKE_URL
         //create URL
         guard let url = URL(string: path) else { return }
         //create task
